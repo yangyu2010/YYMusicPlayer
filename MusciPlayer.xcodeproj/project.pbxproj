@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		862A4E4F1FEE15C9008897EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A4E4E1FEE15C9008897EE /* AppDelegate.m */; };
+		862A4E521FEE15C9008897EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A4E511FEE15C9008897EE /* ViewController.m */; };
+		862A4E551FEE15C9008897EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862A4E531FEE15C9008897EE /* Main.storyboard */; };
+		862A4E571FEE15C9008897EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862A4E561FEE15C9008897EE /* Assets.xcassets */; };
+		862A4E5A1FEE15C9008897EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862A4E581FEE15C9008897EE /* LaunchScreen.storyboard */; };
+		862A4E5D1FEE15C9008897EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A4E5C1FEE15C9008897EE /* main.m */; };
+		862A4E671FEE15C9008897EE /* MusciPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A4E661FEE15C9008897EE /* MusciPlayerTests.m */; };
+		862A4E721FEE15C9008897EE /* MusciPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A4E711FEE15C9008897EE /* MusciPlayerUITests.m */; };
+		862A4E821FEE16B2008897EE /* YYMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A4E811FEE16B2008897EE /* YYMusicPlayer.m */; };
+		862A4E871FEE5337008897EE /* test123.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 862A4E861FEE5337008897EE /* test123.m4a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		862A4E631FEE15C9008897EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862A4E421FEE15C9008897EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 862A4E491FEE15C9008897EE;
+			remoteInfo = MusciPlayer;
+		};
+		862A4E6E1FEE15C9008897EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862A4E421FEE15C9008897EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 862A4E491FEE15C9008897EE;
+			remoteInfo = MusciPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		862A4E4A1FEE15C9008897EE /* MusciPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusciPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		862A4E4D1FEE15C9008897EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		862A4E4E1FEE15C9008897EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		862A4E501FEE15C9008897EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		862A4E511FEE15C9008897EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		862A4E541FEE15C9008897EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		862A4E561FEE15C9008897EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		862A4E591FEE15C9008897EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		862A4E5B1FEE15C9008897EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862A4E5C1FEE15C9008897EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		862A4E621FEE15C9008897EE /* MusciPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusciPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		862A4E661FEE15C9008897EE /* MusciPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusciPlayerTests.m; sourceTree = "<group>"; };
+		862A4E681FEE15C9008897EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862A4E6D1FEE15C9008897EE /* MusciPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusciPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		862A4E711FEE15C9008897EE /* MusciPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusciPlayerUITests.m; sourceTree = "<group>"; };
+		862A4E731FEE15C9008897EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862A4E801FEE16B2008897EE /* YYMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMusicPlayer.h; sourceTree = "<group>"; };
+		862A4E811FEE16B2008897EE /* YYMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYMusicPlayer.m; sourceTree = "<group>"; };
+		862A4E861FEE5337008897EE /* test123.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test123.m4a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		862A4E471FEE15C9008897EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862A4E5F1FEE15C9008897EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862A4E6A1FEE15C9008897EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		862A4E411FEE15C9008897EE = {
+			isa = PBXGroup;
+			children = (
+				862A4E4C1FEE15C9008897EE /* MusciPlayer */,
+				862A4E651FEE15C9008897EE /* MusciPlayerTests */,
+				862A4E701FEE15C9008897EE /* MusciPlayerUITests */,
+				862A4E4B1FEE15C9008897EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		862A4E4B1FEE15C9008897EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				862A4E4A1FEE15C9008897EE /* MusciPlayer.app */,
+				862A4E621FEE15C9008897EE /* MusciPlayerTests.xctest */,
+				862A4E6D1FEE15C9008897EE /* MusciPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		862A4E4C1FEE15C9008897EE /* MusciPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				862A4E831FEE531C008897EE /* Resource */,
+				862A4E7F1FEE1695008897EE /* Classes */,
+				862A4E4D1FEE15C9008897EE /* AppDelegate.h */,
+				862A4E4E1FEE15C9008897EE /* AppDelegate.m */,
+				862A4E501FEE15C9008897EE /* ViewController.h */,
+				862A4E511FEE15C9008897EE /* ViewController.m */,
+				862A4E531FEE15C9008897EE /* Main.storyboard */,
+				862A4E561FEE15C9008897EE /* Assets.xcassets */,
+				862A4E581FEE15C9008897EE /* LaunchScreen.storyboard */,
+				862A4E5B1FEE15C9008897EE /* Info.plist */,
+				862A4E5C1FEE15C9008897EE /* main.m */,
+			);
+			path = MusciPlayer;
+			sourceTree = "<group>";
+		};
+		862A4E651FEE15C9008897EE /* MusciPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				862A4E661FEE15C9008897EE /* MusciPlayerTests.m */,
+				862A4E681FEE15C9008897EE /* Info.plist */,
+			);
+			path = MusciPlayerTests;
+			sourceTree = "<group>";
+		};
+		862A4E701FEE15C9008897EE /* MusciPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				862A4E711FEE15C9008897EE /* MusciPlayerUITests.m */,
+				862A4E731FEE15C9008897EE /* Info.plist */,
+			);
+			path = MusciPlayerUITests;
+			sourceTree = "<group>";
+		};
+		862A4E7F1FEE1695008897EE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				862A4E801FEE16B2008897EE /* YYMusicPlayer.h */,
+				862A4E811FEE16B2008897EE /* YYMusicPlayer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		862A4E831FEE531C008897EE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				862A4E861FEE5337008897EE /* test123.m4a */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		862A4E491FEE15C9008897EE /* MusciPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862A4E761FEE15C9008897EE /* Build configuration list for PBXNativeTarget "MusciPlayer" */;
+			buildPhases = (
+				862A4E461FEE15C9008897EE /* Sources */,
+				862A4E471FEE15C9008897EE /* Frameworks */,
+				862A4E481FEE15C9008897EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusciPlayer;
+			productName = MusciPlayer;
+			productReference = 862A4E4A1FEE15C9008897EE /* MusciPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		862A4E611FEE15C9008897EE /* MusciPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862A4E791FEE15C9008897EE /* Build configuration list for PBXNativeTarget "MusciPlayerTests" */;
+			buildPhases = (
+				862A4E5E1FEE15C9008897EE /* Sources */,
+				862A4E5F1FEE15C9008897EE /* Frameworks */,
+				862A4E601FEE15C9008897EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				862A4E641FEE15C9008897EE /* PBXTargetDependency */,
+			);
+			name = MusciPlayerTests;
+			productName = MusciPlayerTests;
+			productReference = 862A4E621FEE15C9008897EE /* MusciPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		862A4E6C1FEE15C9008897EE /* MusciPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862A4E7C1FEE15C9008897EE /* Build configuration list for PBXNativeTarget "MusciPlayerUITests" */;
+			buildPhases = (
+				862A4E691FEE15C9008897EE /* Sources */,
+				862A4E6A1FEE15C9008897EE /* Frameworks */,
+				862A4E6B1FEE15C9008897EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				862A4E6F1FEE15C9008897EE /* PBXTargetDependency */,
+			);
+			name = MusciPlayerUITests;
+			productName = MusciPlayerUITests;
+			productReference = 862A4E6D1FEE15C9008897EE /* MusciPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		862A4E421FEE15C9008897EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Yang Yu";
+				TargetAttributes = {
+					862A4E491FEE15C9008897EE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					862A4E611FEE15C9008897EE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 862A4E491FEE15C9008897EE;
+					};
+					862A4E6C1FEE15C9008897EE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 862A4E491FEE15C9008897EE;
+					};
+				};
+			};
+			buildConfigurationList = 862A4E451FEE15C9008897EE /* Build configuration list for PBXProject "MusciPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 862A4E411FEE15C9008897EE;
+			productRefGroup = 862A4E4B1FEE15C9008897EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				862A4E491FEE15C9008897EE /* MusciPlayer */,
+				862A4E611FEE15C9008897EE /* MusciPlayerTests */,
+				862A4E6C1FEE15C9008897EE /* MusciPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		862A4E481FEE15C9008897EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862A4E5A1FEE15C9008897EE /* LaunchScreen.storyboard in Resources */,
+				862A4E871FEE5337008897EE /* test123.m4a in Resources */,
+				862A4E571FEE15C9008897EE /* Assets.xcassets in Resources */,
+				862A4E551FEE15C9008897EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862A4E601FEE15C9008897EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862A4E6B1FEE15C9008897EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		862A4E461FEE15C9008897EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862A4E521FEE15C9008897EE /* ViewController.m in Sources */,
+				862A4E5D1FEE15C9008897EE /* main.m in Sources */,
+				862A4E821FEE16B2008897EE /* YYMusicPlayer.m in Sources */,
+				862A4E4F1FEE15C9008897EE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862A4E5E1FEE15C9008897EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862A4E671FEE15C9008897EE /* MusciPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862A4E691FEE15C9008897EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862A4E721FEE15C9008897EE /* MusciPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		862A4E641FEE15C9008897EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 862A4E491FEE15C9008897EE /* MusciPlayer */;
+			targetProxy = 862A4E631FEE15C9008897EE /* PBXContainerItemProxy */;
+		};
+		862A4E6F1FEE15C9008897EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 862A4E491FEE15C9008897EE /* MusciPlayer */;
+			targetProxy = 862A4E6E1FEE15C9008897EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		862A4E531FEE15C9008897EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				862A4E541FEE15C9008897EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		862A4E581FEE15C9008897EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				862A4E591FEE15C9008897EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		862A4E741FEE15C9008897EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		862A4E751FEE15C9008897EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		862A4E771FEE15C9008897EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76MM79XMJ9;
+				INFOPLIST_FILE = MusciPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = musjoy.MusciPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		862A4E781FEE15C9008897EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76MM79XMJ9;
+				INFOPLIST_FILE = MusciPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = musjoy.MusciPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		862A4E7A1FEE15C9008897EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MusciPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = musjoy.MusciPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusciPlayer.app/MusciPlayer";
+			};
+			name = Debug;
+		};
+		862A4E7B1FEE15C9008897EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MusciPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = musjoy.MusciPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusciPlayer.app/MusciPlayer";
+			};
+			name = Release;
+		};
+		862A4E7D1FEE15C9008897EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MusciPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = musjoy.MusciPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MusciPlayer;
+			};
+			name = Debug;
+		};
+		862A4E7E1FEE15C9008897EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MusciPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = musjoy.MusciPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MusciPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		862A4E451FEE15C9008897EE /* Build configuration list for PBXProject "MusciPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862A4E741FEE15C9008897EE /* Debug */,
+				862A4E751FEE15C9008897EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862A4E761FEE15C9008897EE /* Build configuration list for PBXNativeTarget "MusciPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862A4E771FEE15C9008897EE /* Debug */,
+				862A4E781FEE15C9008897EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862A4E791FEE15C9008897EE /* Build configuration list for PBXNativeTarget "MusciPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862A4E7A1FEE15C9008897EE /* Debug */,
+				862A4E7B1FEE15C9008897EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862A4E7C1FEE15C9008897EE /* Build configuration list for PBXNativeTarget "MusciPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862A4E7D1FEE15C9008897EE /* Debug */,
+				862A4E7E1FEE15C9008897EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 862A4E421FEE15C9008897EE /* Project object */;
+}
