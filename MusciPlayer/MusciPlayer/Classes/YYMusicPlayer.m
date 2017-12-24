@@ -38,11 +38,119 @@ static YYMusicPlayer *_shareInstance;
     return _shareInstance;
 }
 
-#pragma mark- Public
+
+#pragma mark- Property
+
+/// 设置速率set
+- (void)setRate:(float)rate {
+    [self.player setRate:rate];
+}
+
+/// 速率get
+- (float)rate {
+    return self.player.rate;
+}
+
+/// 静音set
+- (void)setMuted:(BOOL)muted {
+    self.player.muted = muted;
+}
+
+/// 静音get
+- (BOOL)muted {
+    return self.player.muted;
+}
+
+/// 音量set
+- (void)setVolume:(float)volume {
+    if (volume < 0 || volume > 1) {
+        return;
+    }
+    if (volume > 0) {
+        [self setMuted:NO];
+    }
+    
+    self.player.volume = volume;
+}
+
+/// 音量get
+- (float)volume {
+    return self.player.volume;
+}
+
+/// 总时长
+- (NSTimeInterval)totalTime {
+    if (!self.player) {
+        return 0;
+    }
+    CMTime totalTime = self.player.currentItem.duration;
+    NSTimeInterval totoalSec = CMTimeGetSeconds(totalTime);
+    if (isnan(totoalSec)) {
+        return 0;
+    }
+    return totoalSec;
+}
+
+/// 总时长格式化字符串
+- (NSString *)totalTimeFormat {
+    if (!self.player) {
+        return 0;
+    }
+    return [NSString stringWithFormat:@"%02zd:%02zd", (int)self.totalTime / 60, (int)self.totalTime % 60];
+}
+
+/// 当前播放时长
+- (NSTimeInterval)currentTime {
+    if (!self.player) {
+        return 0;
+    }
+    CMTime currentTime = self.player.currentItem.currentTime;
+    NSTimeInterval currentSec = CMTimeGetSeconds(currentTime);
+    if (isnan(currentSec)) {
+        return 0;
+    }
+    return currentSec;
+}
+
+/// 当前播放时长字符串
+- (NSString *)currentTimeFormat {
+    if (!self.player) {
+        return 0;
+    }
+    return [NSString stringWithFormat:@"%02zd:%02zd", (int)self.currentTime / 60, (int)self.currentTime % 60];
+}
+
+/// 播放进度
+- (float)progress {
+    if (self.totalTime == 0) {
+        return 0;
+    }
+    return self.currentTime / self.totalTime;
+}
+
+/// 加载数据的进度
+- (float)loadDataProgress {
+    if (self.totalTime == 0) {
+        return 0;
+    }
+    CMTimeRange timeRange = [[self.player.currentItem loadedTimeRanges].lastObject CMTimeRangeValue];
+    CMTime loadTime = CMTimeAdd(timeRange.start, timeRange.duration);
+    NSTimeInterval loadTimeSec = CMTimeGetSeconds(loadTime);
+    return loadTimeSec / self.totalTime;
+}
+
+
+#pragma mark- Action
 
 /// 播放URL
 - (void)playWithURL:(NSURL *)url {
 //    [AVPlayer playerWithURL:url];
+    
+    if (url == nil) {
+        return ;
+    }
+    
+    _url = url;
     
     // 1.资源的请求
     AVURLAsset *asset = [AVURLAsset assetWithURL:url];
@@ -120,27 +228,6 @@ static YYMusicPlayer *_shareInstance;
     }];
 }
 
-/// 设置倍速
-- (void)setRate:(float)rate {
-    [self.player setRate:rate];
-}
-
-/// 静音
-- (void)setMuted:(BOOL)muted {
-    self.player.muted = muted;
-}
-
-/// 音量
-- (void)setVolume:(float)volume {
-    if (volume < 0 || volume > 1) {
-        return;
-    }
-    if (volume > 0) {
-        [self setMuted:NO];
-    }
-    
-    self.player.volume = volume;
-}
 
 
 #pragma mark - KVO

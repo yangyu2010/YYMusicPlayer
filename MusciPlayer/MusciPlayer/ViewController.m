@@ -12,21 +12,34 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *playTimeLabel;
-
 @property (weak, nonatomic) IBOutlet UILabel *totalTimeLabel;
-
 @property (weak, nonatomic) IBOutlet UISlider *playProgressSlider;
-
 @property (weak, nonatomic) IBOutlet UIButton *btnMuted;
-
 @property (weak, nonatomic) IBOutlet UISlider *volumeSlider;
-
 @property (weak, nonatomic) IBOutlet UIProgressView *loadPV;
+
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
 @implementation ViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self timer];
+}
+
+#pragma mark- Get
+- (NSTimer *)timer {
+    if (!_timer) {
+        _timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(uploadPlayInfo) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+    }
+    return _timer;
+}
+
+#pragma mark- Action
 
 - (IBAction)play:(id)sender {
     NSURL *url = [NSURL URLWithString:@"http://audio.xmcdn.com/group23/M04/63/C5/wKgJNFg2qdLCziiYAGQxcTOSBEw402.m4a"];
@@ -62,6 +75,23 @@
     [[YYMusicPlayer shareInstance] setVolume:sender.value];
 }
 
+
+#pragma mark- Private
+- (void)uploadPlayInfo {
+    
+    self.playTimeLabel.text =  [YYMusicPlayer shareInstance].currentTimeFormat;
+    
+    self.totalTimeLabel.text = [YYMusicPlayer shareInstance].totalTimeFormat;
+    
+    self.playProgressSlider.value = [YYMusicPlayer shareInstance].progress;
+    
+    self.volumeSlider.value = [YYMusicPlayer shareInstance].volume;
+    
+    self.loadPV.progress = [YYMusicPlayer shareInstance].loadDataProgress;
+    
+    self.btnMuted.selected = [YYMusicPlayer shareInstance].muted;
+    
+}
 
 
 @end
