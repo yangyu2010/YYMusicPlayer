@@ -44,7 +44,7 @@
 - (IBAction)play:(id)sender {
     
 //    // 本地音乐
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"test123" ofType:@"m4a"];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"test123" ofType:@"mp3"];
 //    NSURL *url = [NSURL fileURLWithPath:path];
     
     // 远程

@@ -16,7 +16,7 @@
 		862A4E671FEE15C9008897EE /* MusciPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A4E661FEE15C9008897EE /* MusciPlayerTests.m */; };
 		862A4E721FEE15C9008897EE /* MusciPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A4E711FEE15C9008897EE /* MusciPlayerUITests.m */; };
 		862A4E821FEE16B2008897EE /* YYMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A4E811FEE16B2008897EE /* YYMusicPlayer.m */; };
-		862A4E871FEE5337008897EE /* test123.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 862A4E861FEE5337008897EE /* test123.m4a */; };
+		86905D8A1FF33514000DAFB3 /* test123.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 86905D891FF33514000DAFB3 /* test123.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		862A4E731FEE15C9008897EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		862A4E801FEE16B2008897EE /* YYMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYMusicPlayer.h; sourceTree = "<group>"; };
 		862A4E811FEE16B2008897EE /* YYMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYMusicPlayer.m; sourceTree = "<group>"; };
-		862A4E861FEE5337008897EE /* test123.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test123.m4a; sourceTree = "<group>"; };
+		86905D891FF33514000DAFB3 /* test123.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test123.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 		862A4E831FEE531C008897EE /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				862A4E861FEE5337008897EE /* test123.m4a */,
+				86905D891FF33514000DAFB3 /* test123.mp3 */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -263,9 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				862A4E5A1FEE15C9008897EE /* LaunchScreen.storyboard in Resources */,
-				862A4E871FEE5337008897EE /* test123.m4a in Resources */,
 				862A4E571FEE15C9008897EE /* Assets.xcassets in Resources */,
 				862A4E551FEE15C9008897EE /* Main.storyboard in Resources */,
+				86905D8A1FF33514000DAFB3 /* test123.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
